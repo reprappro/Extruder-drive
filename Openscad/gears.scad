@@ -58,7 +58,7 @@ translate ([0,0,0])
 module large_gear(){
 difference(){
 	union(){
-		translate([0,0,0.01]) cylinder(r=28,h=7,$fn=128); // Changed from 27 - AB
+		translate([0,0,0.01]) cylinder(r=28,h=7,$fn=128);
 		//translate([0,0,-2.999]) cylinder(r2=5.5,r1=3,h=3);
 	}
 	translate([0,0,0]) gear (
@@ -77,19 +77,34 @@ difference(){
 	twist=0,
 	involute_facets=0);
 	
-	translate([0,0,5]) cylinder(h=6, r=5.8/sqrt(3),$fn=6);
-	cylinder(r=3.3/2,h=40,center=true);
+	//cylinder(r=3.3/2,h=40,center=true);
+	//polyhole(40,3);
+	//cylinder(r=3/2,h=40,$fn=24);
+	translate([0,0,4.5]) cylinder(h=6, r=5.4/sqrt(3),$fn=6);
+	cylinder(r=2.95/sqrt(3),h=40,center=true,$fn=6);
 	difference(){
 		cylinder(r=22.5,h=20,center=true,$fn=128); 
 		translate([0,0,2.5]) cylinder(r=5.5,h=7.5,$fn=64);
-		translate([0,0,1.01]) cylinder(r2=5.5,r1=2,h=1.5);
+		translate([0,0,0.51]) cylinder(r2=5.5,r1=2.5,h=2);
 		for(i=[0:5])
 		rotate([0,0,i*360/5])
 		translate([0,15,5.5]) {
-			cube([6,30,3],center=true);
+			difference() {
+			    cube([6,30,3],center=true);
+			    for(k=[1,0]){
+    			    mirror([k,0,0]) translate([2.5,0,-1.5]) rotate([0,60,0]) cube([1,30,4], center=true);
+    			}
+			 }
 		}
 	}
 }
-	translate([0,0,5]) cylinder(r=4,h=0.25);
+	translate([0,0,4.5]) cylinder(r=4,h=0.25);
 
 }
+
+module polyhole(h, d) {
+    n = max(round(2 * d),3);
+    rotate([0,0,180])
+        cylinder(h = h, r = (d / 2) / cos (180 / n), $fn = n);
+}
+
