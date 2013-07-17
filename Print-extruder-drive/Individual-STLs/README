@@ -1,0 +1,29 @@
+These are the all the printed parts for the extruder for a RepRapPro Mendel or
+Huxley.  See:
+
+    http://reprappro.com/Tricolour_Mendel
+    http://reprappro.com/Mono_Mendel
+    http://reprappro.com/Huxley
+
+Each filename has the number-off for that part that you need to print as part of 
+its filename.
+
+For a Tricolour Mendel you will need three extruder drives.  For a Mono Mendel or a Huxley 
+you will need one extruder drives.
+
+For all the other printed parts for the machines see here:
+
+    https://github.com/reprappro/Mendel
+    https://github.com/reprappro/Huxley
+
+For complete build instructions for the machines and lists of the non-printed parts you
+will also need see here:
+
+    http://reprappro.com/wiki/index.php/RepRapPro_Tricolour
+    http://reprappro.com/wiki/index.php/RepRapPro_Huxley
+
+(The Mono Mendel has the same instructions as the Tricolour.)
+
+RepRapPro sells hardware-only kits to go with the printed parts described above so that
+you can print your own RepRap and then get all the additional hardware needed to build
+and operate the complete machine from one place.  See the first three links above for details.
