@@ -9,7 +9,7 @@ Each filename has the number-off for that part that you need to print as part of
 its filename.
 
 For a Tricolour Mendel you will need three extruder drives.  For a Mono Mendel or a Huxley 
-you will need one extruder drives.
+you will need one extruder drive.
 
 For all the other printed parts for the machines see here:
 
@@ -17,7 +17,7 @@ For all the other printed parts for the machines see here:
     https://github.com/reprappro/Huxley
 
 For complete build instructions for the machines and lists of the non-printed parts you
-will also need see here:
+will also need, see here:
 
     http://reprappro.com/wiki/index.php/RepRapPro_Tricolour
     http://reprappro.com/wiki/index.php/RepRapPro_Huxley
