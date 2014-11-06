@@ -101,7 +101,7 @@ module drive_block(){
 		//****motor mount holes****
 		for(i=[1,-1]){
 			translate([i*motor_hole_pitch/2,-motor_hole_pitch/2,-0.1]) rotate([0,0,22.5]) cylinder(r=3.3*da8,h=20,$fn=8);
-			translate([i*motor_hole_pitch/2,-motor_hole_pitch/2,11]) cylinder(r=3.1,h=5);
+			translate([i*motor_hole_pitch/2,-motor_hole_pitch/2,9]) cylinder(r=3.1,h=6);
 		}
 		//****idler tensioner****
 		for(i=[0,11.5]){
