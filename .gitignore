@@ -1,0 +1,6 @@
+gcodes/
+*~
+~*
+*.g
+*.gcode
+*.orig

@@ -1,4 +1,4 @@
-thickness=2;
+thickness=4;
 hole_pitch=31;//26;
 rad = 6;
 notch = false;
